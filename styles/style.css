@@ -1,15 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
 :root {
     --dark-blue-300: #0A3871;
     --white: #FFFFFF;
     --gray-400: #495057;
+    --light-blue-100: #F3F5FC;
     --mystic: #D8DFE8;
-
     --primary-font: "Inter", sans-serif;
+}
+
+body {
+    background: var(--light-blue-100);
+    margin: 2%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: 90vh;
+}
+
+
+.text__input__container {
+    display: flex;
+    margin: 4%;
+    width: 100vh;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.text__input__container__input {
+    display: flex;
+    width: 100vh;
+    height: 68vh;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 150%;
+    background: var(--light-blue-100);
+    color: var(--dark-blue-300);
+    caret-color: var(--dark-blue-300);
+    
+}
+
+.text__input__container__input::placeholder {
+    display: flex;
+    border: none;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--dark-blue-300);
+}
+
+.text__input__container__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.text__input__container__text__icon {
+    color: var(--gray-400);
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 1% 0 0 0;
+}
+
+.text__input__container__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0 0 0;
+}
+
+.text__input__container__encrypt__button {
+    width: 48%;
+    background: var(--dark-blue-300);
+    color: var(--white);
+    border-radius: 24px;
+    padding: 24px;
+    font-size: 1rem;
+    border: none;
+    line-height: auto;
+    font-weight: 400;
+}
+
+.text__input__container__decrypt__button {
+    width: 48%;
+    background: var(--mystic);
+    color: var(--dark-blue-300);
+    border-radius: 24px;
+    padding: 24px;
+    font-size: 1rem;
+    border: 1px solid var(--dark-blue-300);
+    line-height: auto;
+    font-weight: 400;
+}
+
+.class__result {
+    display: flex;
+    background: var(--white);
+    border-radius: 32px;
+    width: 27.78%;
+    padding: 2%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.class__result__paragraph {
+    margin: 32px;
+    font-size: 1rem;
+}
+
+.class__result__paragraph__bold {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 120%;
+    gap: 16px;
 }
