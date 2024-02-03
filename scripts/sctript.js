@@ -3,7 +3,7 @@
 let inputTextField = document.querySelector("textarea");
 inputTextField.placeholder = "Digite seu texto";
 
-let phrase;
+let phrase = "";
 
 const form = document.forms.namedItem("encrypt-decrypt");
 form.addEventListener("input", () => {
@@ -29,9 +29,34 @@ function alertMessage(method) {
     });
 }
 
-function encryptPhrase(formData, method) {
-    if (formData == undefined) return alertMessage(method);
-    console.log(formData);
+function encryptPhrase(phrase, method) {
+    if (phrase == "") return alertMessage(method);
+
+    let encryptPhrase = "";
+
+    for (let i = 0; i < phrase.length; i++) {
+        switch (phrase[i]) {
+            case "a":
+                encryptPhrase = encryptPhrase + phrase[i].replace(phrase[i], "ai");
+                break;
+            case "e":
+                encryptPhrase = encryptPhrase + phrase[i].replace(phrase[i], "enter");
+                break;
+            case "i":
+                encryptPhrase = encryptPhrase + phrase[i].replace(phrase[i], "imes");
+                break;
+            case "o":
+                encryptPhrase = encryptPhrase + phrase[i].replace(phrase[i], "ober");
+                break;
+            case "u":
+                encryptPhrase = encryptPhrase + phrase[i].replace(phrase[i], "ufat");
+                break;
+            default: encryptPhrase = encryptPhrase + phrase[i];
+                break;
+        }
+    }
+    console.log(encryptPhrase);
+
 }
 
 function decryptPhrase(formData, method) {
@@ -39,9 +64,9 @@ function decryptPhrase(formData, method) {
     console.log(formData);
 }
 
-const button = document.getElementById("buttons");
+const buttons = document.getElementById("buttons");
 
-button.addEventListener("click", (event) => {
+buttons.addEventListener("click", (event) => {
     event.preventDefault();
 
     const { target } = event;
@@ -65,6 +90,5 @@ A letra "o" é convertida para "ober"
 A letra "u" é convertida para "ufat"
 
 Ex: paraguai = pairaigufataiimes
-
+Ex: diogo saimon = dimesobergober saiimesmobern
 */
-
