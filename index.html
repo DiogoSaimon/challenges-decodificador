@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/sctript.js" defer></script>
     <title>Decodificador</title>
@@ -16,16 +18,17 @@
         </div>
 
         <div class="text__input__container">
-            <textarea class="text__input__container__input"></textarea>
-            <div class="text__input__container__text__icon">
-                <img class="text__input__container__icon" src="assets/png/exclamation-circle-fill.png"
-                    alt="ícone exclamação circular">
-                Apenas letras minúsculas e sem acento.
-                <div class="text__input__container__buttons">
-                    <button class="text__input__container__encrypt__button">Criptografar</button>
-                    <button class="text__input__container__decrypt__button">Descriptografar</button>
+            <form method="GET" id="encrypt-decrypt">
+                <textarea class="text__input__container__input" name="message"></textarea>
+                <div class="text__input__container__text__icon">
+                    <img class="text__input__container__icon" src="assets/png/exclamation-circle-fill.png"
+                        alt="ícone exclamação circular">
+                    Apenas letras minúsculas e sem acento.
+                    <div class="text__input__container__buttons" id="buttons">
+                        <button class="text__input__container__encrypt__button" id="encrypt">Criptografar</button>
+                        <button class="text__input__container__decrypt__button" id="decrypt">Descriptografar</button>
+                    </div>
                 </div>
-            </div>
         </div>
 
         <div class="class__result">
@@ -35,7 +38,9 @@
                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
         </div>
+        </form>
     </main>
+
 </body>
 
 </html>
