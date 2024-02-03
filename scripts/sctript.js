@@ -17,7 +17,6 @@ form.addEventListener("input", () => {
 })
 
 function alertMessage(method) {
-
     let functionName = method == "encrypt" ? "encriptação" : "decriptação";
 
     Swal.fire({
@@ -28,6 +27,23 @@ function alertMessage(method) {
         timer: 2500
     });
 }
+
+const buttons = document.getElementById("buttons");
+
+buttons.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const { target } = event;
+
+    switch (target.getAttribute("id")) {
+        case "encrypt":
+            encryptPhrase(phrase, "encrypt");
+            break;
+        case "decrypt":
+            decryptPhrase(phrase, "decrypt");
+            break;
+    }
+})
 
 function encryptPhrase(phrase, method) {
     if (phrase == "") return alertMessage(method);
@@ -55,40 +71,11 @@ function encryptPhrase(phrase, method) {
                 break;
         }
     }
-    console.log(encryptPhrase);
-
 }
 
-function decryptPhrase(formData, method) {
-    if (formData == undefined) return alertMessage(method);
-    console.log(formData);
+function decryptPhrase(phrase, method) {
+    let decryptPhrase = "";
+    if (phrase == "") return alertMessage(method);
+
+    decryptPhrase = phrase.replaceAll("ai", "a").replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ober", "o").replaceAll("ufat", "u");
 }
-
-const buttons = document.getElementById("buttons");
-
-buttons.addEventListener("click", (event) => {
-    event.preventDefault();
-
-    const { target } = event;
-
-    switch (target.getAttribute("id")) {
-        case "encrypt":
-            encryptPhrase(phrase, "encrypt");
-            break;
-        case "decrypt":
-            decryptPhrase(phrase, "decrypt");
-            break;
-    }
-})
-
-/*
-
-A letra "e" é convertida para "enter"
-A letra "i" é convertida para "imes"
-A letra "a" é convertida para "ai"
-A letra "o" é convertida para "ober"
-A letra "u" é convertida para "ufat"
-
-Ex: paraguai = pairaigufataiimes
-Ex: diogo saimon = dimesobergober saiimesmobern
-*/
