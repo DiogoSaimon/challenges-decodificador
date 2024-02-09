@@ -9,22 +9,24 @@
 
 :root {
     --dark-blue-300: #0A3871;
+    --dark-blue-300-hover: rgba(10, 56, 113,.8);
     --white: #FFFFFF;
     --gray-400: #495057;
     --light-blue-100: #F3F5FC;
     --mystic: #D8DFE8;
+    --mystic-hover: rgba(216, 223, 232,.6);
 }
 
 body {
     background: var(--light-blue-100);
-    margin: 2%;
+    margin: 2% 0 0 0;
 }
 
 main {
     display: flex;
-    justify-content: space-between;
     width: auto;
-    height: 90vh;
+    height: 95vh;
+    gap: 0px 32px;
 }
 
 
@@ -39,7 +41,7 @@ main {
 .text__input__container__input {
     display: flex;
     width: 100vh;
-    height: 68vh;
+    height: 70vh;
     border: none;
     outline: none;
     font-size: 2rem;
@@ -91,6 +93,10 @@ main {
     font-weight: 400;
 }
 
+.text__input__container__encrypt__button:hover{
+    background: var(--dark-blue-300-hover);
+}
+
 .text__input__container__decrypt__button {
     width: 48%;
     background: var(--mystic);
@@ -103,11 +109,16 @@ main {
     font-weight: 400;
 }
 
+.text__input__container__decrypt__button:hover{
+    background: var(--white);
+}
+
 .class__result {
     display: flex;
     background: var(--white);
     border-radius: 32px;
     width: 27.78%;
+    height: 90vh;
     padding: 2%;
     flex-direction: column;
     justify-content: center;
@@ -126,4 +137,42 @@ main {
     text-align: center;
     line-height: 120%;
     gap: 16px;
+}
+
+.show__class__result__text{
+    display: flex;
+    height: 76vh;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: left;
+    color: var(--dark-blue-300);
+}
+
+.show__class__result__copy__button{
+    display: flex;
+    width: 100%;
+    background: var(--white);
+    color: var(--dark-blue-300);
+    border-radius: 24px;
+    padding: 24px;
+    font-size: 1rem;
+    border: 1px solid var(--dark-blue-300);
+    line-height: auto;
+    font-weight: 400;
+    justify-content: center;
+}
+
+.show__class__result__copy__button:hover{
+    background: var(--mystic);
+}
+
+footer{
+    display: flex;
+    background: var(--dark-blue-300);
+    color: var(--white);
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 13vh;
 }
