@@ -45,6 +45,19 @@ buttons.addEventListener("click", (event) => {
     }
 })
 
+function showPhrase(phrase) {
+    let showPhrase = document.querySelector('.show__class__result__text');
+    showPhrase.innerText = phrase;
+}
+
+function ocultSection() {
+    let classResultEmptySection = document.querySelector(".class__result__empty");
+    let showClassResultSection = document.querySelector(".show__class__result");
+
+    classResultEmptySection.setAttribute("hidden", "");
+    showClassResultSection.removeAttribute("hidden", "");
+}
+
 function encryptPhrase(phrase, method) {
     if (phrase == "") return alertMessage(method);
 
@@ -70,7 +83,11 @@ function encryptPhrase(phrase, method) {
             default: encryptPhrase = encryptPhrase + phrase[i];
                 break;
         }
+
+
     }
+    ocultSection();
+    showPhrase(encryptPhrase);
 }
 
 function decryptPhrase(phrase, method) {
@@ -78,4 +95,25 @@ function decryptPhrase(phrase, method) {
     if (phrase == "") return alertMessage(method);
 
     decryptPhrase = phrase.replaceAll("ai", "a").replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ober", "o").replaceAll("ufat", "u");
+
+    ocultSection();
+    showPhrase(decryptPhrase);
 }
+
+
+let copyButton = document.getElementById("copy-button");
+
+copyButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    let textSelected = document.querySelector(".show__class__result__text").innerText;
+
+    navigator.clipboard.writeText(textSelected).then(() => {
+        Swal.fire({
+            position: "top-start",
+            icon: "success",
+            title: "Texto copiado com sucesso",
+            showConfirmButton: false,
+            timer: 1500,
+        });
+    });
+})
