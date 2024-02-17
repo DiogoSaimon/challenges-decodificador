@@ -1,0 +1,84 @@
+:root {
+    --dark-blue-300: #0A3871;
+    --dark-blue-300-hover: rgba(10, 56, 113, .8);
+    --white: #FFFFFF;
+    --gray-400: #495057;
+    --light-blue-100: #F3F5FC;
+    --mystic: #D8DFE8;
+    --mystic-hover: rgba(216, 223, 232, .6);
+}
+
+.logo__color__theme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15%;
+}
+
+#mode-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--dark-blue-300);
+    transition: 0.2s ease-in;
+}
+
+#mode-icon:hover{
+    transform: scale(1.2);
+}
+
+.dark#body{
+    background: var(--dark-blue-300);
+    transition: 0.3s linear;
+}
+
+.dark#body #mode-icon {
+    color: var(--light-blue-100);
+}
+
+.dark#body .text__input__container__input{
+    background: var(--dark-blue-300);
+    color: var(--light-blue-100);
+}
+.dark#body .text__input__container__input::placeholder{
+    color: var(--light-blue-100);
+}
+
+.dark#body .text__input__container__text__icon{
+    color: var(--light-blue-100);
+}
+
+.dark#body #encrypt{
+    background: var(--light-blue-100);
+    color: var(--dark-blue-300);
+    transition: 0.3s linear;
+}
+.dark#body #encrypt:hover{
+    background: var(--mystic);
+    color: var(--dark-blue-300);
+}
+
+.dark#body #decrypt{
+    background: var(--mystic-hover);
+    color: var(--dark-blue-300);
+    transition: 0.3s linear;
+}
+.dark#body #decrypt:hover{
+    background: var(--white);
+    color: var(--dark-blue-300);
+}
+
+.dark#body footer{
+    background: var(--light-blue-100);
+    color: var(--dark-blue-300);
+    transition: 0.3s linear;
+}
+
+.dark#body .class__result{
+    background: var(--mystic-hover);
+    color: var(--white);
+    transition: 0.3s linear;
+}
+
+.dark#body .show__class__result__text{
+    color: var(--white);
+}
