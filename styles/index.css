@@ -44,7 +44,8 @@ body {
     pointer-events: none;
 }
 
-.alert.showAlert {
+.alert.showAlert,
+.alert.showCopyAlert {
     opacity: 1;
     pointer-events: auto;
 
@@ -82,12 +83,6 @@ body {
     }
 }
 
-.alert.showCopyAlert {
-    opacity: 1;
-    pointer-events: auto;
-
-}
-
 .alert.copy_show {
     animation: copy_opacity_show 1s ease forwards;
     margin-left: 2%;
@@ -102,6 +97,7 @@ body {
         opacity: 1;
     }
 }
+
 .alert.copy_hide {
     animation: copy_opacity_hide 1s ease forwards;
     margin-left: 2%;
