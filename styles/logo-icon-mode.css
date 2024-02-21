@@ -1,0 +1,12 @@
+.logo__color__theme{
+    width: 5%;
+}
+
+#logo-alura{
+    font-size: 2rem;
+}
+
+#mode-icon{
+    font-size: 2rem;
+    transition: 0.2s ease-in;
+}

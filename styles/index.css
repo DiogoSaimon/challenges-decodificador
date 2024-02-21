@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url("dark-theme.css");
+@import url("logo-icon-mode.css");
+@import url("input.css");
+@import url("result.css");
+@import url("footer.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --dark-blue-300: #0A3871;
+    --dark-blue-300-hover: rgba(10, 56, 113, .8);
+    --white: #FFFFFF;
+    --gray-400: #495057;
+    --light-blue-100: #F3F5FC;
+    --mystic: #D8DFE8;
+    --mystic-hover: rgba(216, 223, 232, .6);
+}
+
+body {
+    background: var(--light-blue-100);
+    transition: 0.3s linear;
+}
+
+main {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    padding: 2%;
+}

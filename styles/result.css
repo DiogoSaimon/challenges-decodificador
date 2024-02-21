@@ -1,0 +1,61 @@
+.class__result {
+    display: flex;
+    background: var(--white);
+    border-radius: 32px;
+    width: 40%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    transition: 0.3s linear;
+}
+
+.class__result__paragraph {
+    margin: 32px;
+    font-size: 1rem;
+}
+
+.class__result__paragraph__bold {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 120%;
+    gap: 16px;
+}
+
+#regular-text {
+    padding-top: 12px;
+}
+
+.show__class__result{
+    padding: 1.5rem;
+}
+
+.show__class__result__text {
+    display: flex;
+    height: 95vh;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: left;
+    color: var(--dark-blue-300);
+}
+
+.show__class__result__copy__button {
+    display: flex;
+    width: 100%;
+    background: var(--white);
+    color: var(--dark-blue-300);
+    border-radius: 24px;
+    padding: 1.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--dark-blue-300);
+    font-weight: 400;
+    justify-content: center;
+    transition: 0.3s linear;
+}
+
+.show__class__result__copy__button:hover {
+    background: var(--mystic);
+    transform: scale(1.05);
+}
