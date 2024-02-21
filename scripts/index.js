@@ -1,5 +1,7 @@
 "use strict";
 
+import { inputEmpty, copyTextAlert } from "./alert-notification.js";
+
 let inputTextField = document.querySelector("textarea");
 inputTextField.placeholder = "Digite seu texto";
 
@@ -18,14 +20,7 @@ form.addEventListener("input", () => {
 
 function alertMessage(method) {
     let functionName = method == "encrypt" ? "encriptação" : "decriptação";
-
-    Swal.fire({
-        position: "top-start",
-        icon: "error",
-        title: `Por favor, digitar algo para prosseguir com a ${functionName}`,
-        showConfirmButton: false,
-        timer: 2500
-    });
+    inputEmpty(functionName);
 }
 
 const buttons = document.getElementById("buttons");
@@ -107,13 +102,5 @@ copyButton.addEventListener("click", (event) => {
     event.preventDefault();
     let textSelected = document.querySelector(".show__class__result__text").innerText;
 
-    navigator.clipboard.writeText(textSelected).then(() => {
-        Swal.fire({
-            position: "top-start",
-            icon: "success",
-            title: "Texto copiado com sucesso",
-            showConfirmButton: false,
-            timer: 1500,
-        });
-    });
+    navigator.clipboard.writeText(textSelected).then(() => copyTextAlert());
 })
