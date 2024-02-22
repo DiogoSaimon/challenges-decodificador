@@ -1,6 +1,7 @@
-"use strict"
+"use strict";
 
-let mode = document.getElementById("mode-icon");
+export function darkThemeMode(){
+    let mode = document.getElementById("mode-icon");
 
 mode.addEventListener("click", () => {
     const body = document.querySelector("body");
@@ -22,3 +23,4 @@ mode.addEventListener("click", () => {
     body.classList.remove("dark");
     logo.src = "assets/png/logo-alura.png";
 })
+}

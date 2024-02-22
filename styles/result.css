@@ -28,13 +28,22 @@
     padding-top: 12px;
 }
 
-.show__class__result{
+.show__class__result {
     padding: 1.5rem;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.show__class__result.hide,
+.class__result__empty.hide {
+    display: none;
 }
 
 .show__class__result__text {
     display: flex;
-    height: 95vh;
+    height: 100%;
     width: 100%;
     font-size: 1.5rem;
     text-align: left;

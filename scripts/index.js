@@ -1,22 +1,10 @@
 "use strict";
 
-import { inputEmpty, copyTextAlert } from "./alert-notification.js";
+import { darkThemeMode } from "../scripts/dark-theme/dark-theme.js";
+import { inputEmpty, copyTextAlert } from "./alert-notification/alert-notification.js";
+import { phrase } from "./get-text/get-text.js";
 
-let inputTextField = document.querySelector("textarea");
-inputTextField.placeholder = "Digite seu texto";
-
-let phrase = "";
-
-const form = document.forms.namedItem("encrypt-decrypt");
-form.addEventListener("input", () => {
-    const message = form.message.value;
-
-    const formData = new FormData(form);
-
-    formData.set("message", message);
-
-    phrase = formData.get("message");
-})
+darkThemeMode();
 
 function alertMessage(method) {
     let functionName = method == "encrypt" ? "encriptação" : "decriptação";
@@ -49,8 +37,8 @@ function ocultSection() {
     let classResultEmptySection = document.querySelector(".class__result__empty");
     let showClassResultSection = document.querySelector(".show__class__result");
 
-    classResultEmptySection.setAttribute("hidden", "");
-    showClassResultSection.removeAttribute("hidden", "");
+    classResultEmptySection.classList.add("hide");
+    showClassResultSection.classList.remove("hide");
 }
 
 function encryptPhrase(phrase, method) {
@@ -78,8 +66,6 @@ function encryptPhrase(phrase, method) {
             default: encryptPhrase = encryptPhrase + phrase[i];
                 break;
         }
-
-
     }
     ocultSection();
     showPhrase(encryptPhrase);
