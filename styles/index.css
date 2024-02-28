@@ -31,7 +31,7 @@ body {
     background: var(--dark-blue-300);
     color: var(--white);
     padding: 16px 24px 16px 54px;
-    min-width: 300px;
+    /* min-width: 300px; */
     font-size: 1.25rem;
     position: fixed;
     left: 0;
@@ -46,24 +46,15 @@ body {
 .alert.showCopyAlert {
     opacity: 1;
     pointer-events: auto;
-
 }
 
-.alert.show {
-    animation: copy_opacity_show 1s ease forwards;
-    margin-left: 2%;
-}
-
-.alert.hide {
-    animation: copy_opacity_hide 1s ease forwards;
-    margin-left: 2%;
-}
-
+.alert.show,
 .alert.copy_show {
     animation: copy_opacity_show 1s ease forwards;
     margin-left: 2%;
 }
 
+.alert.hide,
 .alert.copy_hide {
     animation: copy_opacity_hide 1s ease forwards;
     margin-left: 2%;
@@ -125,5 +116,24 @@ main {
     .alert.showCopyAlert {
         width: auto;
         transform: translate(50%, 20%);
+    }
+}
+
+@media screen and (max-width: 540px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem;
+    }
+
+    .alert.showAlert {
+        width: 40%;
+        transform: translate(25%, 20%);
+        align-items: start;
+    }
+
+    .alert.showCopyAlert {
+        width: auto;
+        transform: translate(25%, 20%);
     }
 }
