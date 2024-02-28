@@ -90,3 +90,13 @@
 .text__input__container__decrypt__button:hover {
     background: var(--white);
 }
+
+@media screen and (max-width: 859px) {
+    .text__input__container{
+        margin: 7.25rem 0% 4rem 0%;
+    }
+
+    .text__input__container .text__input__container__input{
+        height: 55vh;
+    }
+}

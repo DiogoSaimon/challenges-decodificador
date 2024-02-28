@@ -10,3 +10,23 @@
     font-size: 2rem;
     transition: 0.2s ease-in;
 }
+
+@media screen and (max-width: 859px){
+    .logo__color__theme{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        align-items: stretch;
+        justify-content: space-evenly;
+    }
+
+    .logo__color__theme #logo-alura{
+        position: absolute;
+        left: 0;
+    }
+
+    .logo__color__theme #mode-icon{
+        position: absolute;
+        right: 2.5rem;
+    }
+}
