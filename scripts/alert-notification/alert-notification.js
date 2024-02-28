@@ -1,8 +1,9 @@
 "use strict";
 
+let alertNotification = document.querySelector(".alert");
+let alertNotificationMessage = document.querySelector(".alert_message");
+
 export function copyTextAlert() {
-    let alertNotification = document.querySelector(".alert");
-    let alertNotificationMessage = document.querySelector(".alert_message");
 
     alertNotificationMessage.innerText = "Text copiado";
 
@@ -22,8 +23,6 @@ export function copyTextAlert() {
 };
 
 export function inputEmpty(functionName) {
-    let alertNotification = document.querySelector(".alert");
-    let alertNotificationMessage = document.querySelector(".alert_message");
 
     alertNotificationMessage.innerText = `Por favor, digitar algo para prosseguir com a ${functionName}`;
 
