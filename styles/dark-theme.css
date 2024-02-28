@@ -1,4 +1,4 @@
-.logo__color__theme{
+.logo__color__theme {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,16 +12,16 @@
     transition: 0.2s ease-in;
 }
 
-#mode-icon:hover{
+#mode-icon:hover {
     transform: scale(1.2);
 }
 
-.dark#body{
+.dark#body {
     background: var(--dark-blue-300);
     transition: 0.3s linear;
 }
 
-.dark#body .alert{
+.dark#body .alert {
     background: var(--light-blue-100);
     color: var(--dark-blue-300);
     transition: 0.3s linear;
@@ -31,51 +31,65 @@
     color: var(--light-blue-100);
 }
 
-.dark#body .text__input__container__input{
+.dark#body .text__input__container__input {
     background: var(--dark-blue-300);
     color: var(--light-blue-100);
     caret-color: var(--white);
 }
-.dark#body .text__input__container__input::placeholder{
+
+.dark#body .text__input__container__input::placeholder {
     color: var(--light-blue-100);
 }
 
-.dark#body .text__input__container__text__icon{
+.dark#body .text__input__container__text__icon {
     color: var(--light-blue-100);
 }
 
-.dark#body #encrypt{
+.dark#body #encrypt {
     background: var(--light-blue-100);
     color: var(--dark-blue-300);
     transition: 0.3s linear;
 }
-.dark#body #encrypt:hover{
+
+.dark#body #encrypt:hover {
     background: var(--mystic);
     color: var(--dark-blue-300);
 }
 
-.dark#body #decrypt{
+.dark#body #decrypt {
     background: var(--mystic-hover);
     color: var(--dark-blue-300);
     transition: 0.3s linear;
 }
-.dark#body #decrypt:hover{
+
+.dark#body #decrypt:hover {
     background: var(--white);
     color: var(--dark-blue-300);
 }
 
-.dark#body footer{
+.dark#body footer {
     background: var(--light-blue-100);
     color: var(--dark-blue-300);
     transition: 0.3s linear;
 }
 
-.dark#body .class__result{
+.dark#body .class__result {
     background: var(--mystic-hover);
     color: var(--white);
     transition: 0.3s linear;
 }
 
-.dark#body .show__class__result__text{
+.dark#body .show__class__result__text {
     color: var(--white);
+}
+
+@media screen and (max-width: 859px) {
+    .dark#body .class__result {
+        background: var(--mystic-hover);
+        color: var(--white);
+    }
+
+    .dark#body .show__class__result__copy__button {
+        background: var(--white);
+    }
 }

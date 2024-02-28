@@ -68,3 +68,23 @@
     background: var(--mystic);
     transform: scale(1.05);
 }
+
+@media screen and (max-width: 859px) {
+    .class__result{
+        display: flex;
+        width: 100%;
+    }
+
+    .class__result .class__result__image{
+        display: none;
+    }
+
+    .class__result .show__class__result{
+        gap: 2rem;
+    }
+
+    .show__class__result__copy__button:hover {
+        background:none;
+        transform: none;
+    }
+}
