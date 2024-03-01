@@ -3,6 +3,7 @@
 let alertNotification = document.querySelector(".alert");
 let alertNotificationMessage = document.querySelector(".alert_message");
 
+
 export function copyTextAlert() {
 
     alertNotificationMessage.innerText = "Text copiado";
@@ -13,7 +14,7 @@ export function copyTextAlert() {
 
     alertNotification.classList.remove("copy_hide");
     alertNotification.classList.add("copy_show");
-    alertNotification.classList.add("showCopyAlert");
+    alertNotification.classList.add("show_copy_alert");
 
 
     setTimeout(() => {
@@ -32,7 +33,7 @@ export function inputEmpty(functionName) {
 
     alertNotification.classList.remove("hide");
     alertNotification.classList.add("show");
-    alertNotification.classList.add("showAlert");
+    alertNotification.classList.add("show_alert");
 
 
     setTimeout(() => {
