@@ -1,4 +1,4 @@
-.class__result {
+.class_result {
     display: flex;
     background: var(--white);
     border-radius: 32px;
@@ -8,15 +8,14 @@
     justify-content: center;
     text-align: center;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    /* transition: 0.3s linear; */
 }
 
-.class__result__paragraph {
+.class_result_paragraph {
     margin: 32px;
     font-size: 1rem;
 }
 
-.class__result__paragraph__bold {
+.class_result_paragraph_bold {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
@@ -28,7 +27,7 @@
     padding-top: 12px;
 }
 
-.show__class__result {
+.show_class_result {
     padding: 1.5rem;
     justify-content: space-between;
     display: flex;
@@ -36,12 +35,12 @@
     height: 100%;
 }
 
-.show__class__result.hide,
-.class__result__empty.hide {
+.show_class_result.hide,
+.class_result_empty.hide {
     display: none;
 }
 
-.show__class__result__text {
+.show_class_result_text {
     display: flex;
     height: 100%;
     width: 100%;
@@ -50,7 +49,7 @@
     color: var(--dark-blue-300);
 }
 
-.show__class__result__copy__button {
+.show_class_result_copy_button {
     display: flex;
     width: 100%;
     background: var(--white);
@@ -64,26 +63,26 @@
     transition: 0.3s linear;
 }
 
-.show__class__result__copy__button:hover {
+.show_class_result_copy_button:hover {
     background: var(--mystic);
     transform: scale(1.05);
 }
 
 @media screen and (max-width: 859px) {
-    .class__result {
+    .class_result {
         display: flex;
         width: 100%;
     }
 
-    .class__result .class__result__image {
+    .class_result .class_result_image {
         display: none;
     }
 
-    .class__result .show__class__result {
+    .class_result .show_class_result {
         gap: 2rem;
     }
 
-    .show__class__result__copy__button:hover {
+    .show_class_result_copy_button:hover {
         background: none;
         transform: none;
     }
