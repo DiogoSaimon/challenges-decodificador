@@ -30,13 +30,13 @@ buttons.addEventListener("click", (event) => {
 })
 
 function showPhrase(phrase) {
-    let showPhrase = document.querySelector('.show__class__result__text');
+    let showPhrase = document.querySelector('.show_class_result_text');
     showPhrase.innerText = phrase;
 }
 
 function ocultSection() {
-    let classResultEmptySection = document.querySelector(".class__result__empty");
-    let showClassResultSection = document.querySelector(".show__class__result");
+    let classResultEmptySection = document.querySelector(".class_result_empty");
+    let showClassResultSection = document.querySelector(".show_class_result");
 
     classResultEmptySection.classList.add("hide");
     showClassResultSection.classList.remove("hide");
@@ -87,7 +87,7 @@ let copyButton = document.getElementById("copy-button");
 
 copyButton.addEventListener("click", (event) => {
     event.preventDefault();
-    let textSelected = document.querySelector(".show__class__result__text").innerText;
+    let textSelected = document.querySelector(".show_class_result_text").innerText;
 
     navigator.clipboard.writeText(textSelected).then(() => copyTextAlert());
 })

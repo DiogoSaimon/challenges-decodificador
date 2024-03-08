@@ -16,4 +16,3 @@ form.addEventListener("input", () => {
 
     phrase = formData.get("message");
 })
-
