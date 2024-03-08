@@ -4,6 +4,7 @@ import { darkThemeMode } from "../scripts/dark-theme/dark-theme.js";
 import { inputEmpty, copyTextAlert } from "./alert-notification/alert-notification.js";
 import { phrase } from "./get-text/get-text.js";
 
+
 darkThemeMode();
 
 function alertMessage(method) {

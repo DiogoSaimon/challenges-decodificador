@@ -8,7 +8,7 @@
     justify-content: center;
     text-align: center;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    transition: 0.3s linear;
+    /* transition: 0.3s linear; */
 }
 
 .class__result__paragraph {
@@ -70,21 +70,26 @@
 }
 
 @media screen and (max-width: 859px) {
-    .class__result{
+    .class__result {
         display: flex;
         width: 100%;
     }
 
-    .class__result .class__result__image{
+    .class__result .class__result__image {
         display: none;
     }
 
-    .class__result .show__class__result{
+    .class__result .show__class__result {
         gap: 2rem;
     }
 
     .show__class__result__copy__button:hover {
-        background:none;
+        background: none;
         transform: none;
     }
+}
+
+
+.class_result_effect {
+    visibility: hidden;
 }

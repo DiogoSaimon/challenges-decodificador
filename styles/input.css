@@ -111,3 +111,8 @@
     }
     
 }
+
+.text_input_container_input_effect,
+.text_input_container_buttons_effect {
+    visibility: hidden;
+}
