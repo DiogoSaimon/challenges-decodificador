@@ -7,7 +7,7 @@ https://github.com/DiogoSaimon/challenges-decodificador/assets/86212446/e12a4fdf
 
 
 # Resumo do projeto
-Projeto finaliazado. O Desafio era criar um projeto para codificar e descodificar o texto do usuário, além de poder copiar o resultado.
+Projeto finalizado. O Desafio era criar um projeto para codificar e descodificar o texto do usuário, além de poder copiar o resultado.
 
 
 ## Funcionalidades do projeto
