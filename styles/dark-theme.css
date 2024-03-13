@@ -31,13 +31,13 @@
     color: var(--light-blue-100);
 }
 
-.dark#body .text_input_container__input {
+.dark#body .text_input_container_input {
     background: var(--dark-blue-300);
     color: var(--light-blue-100);
     caret-color: var(--white);
 }
 
-.dark#body .text_input_container__input::placeholder {
+.dark#body .text_input_container_input::placeholder {
     color: var(--light-blue-100);
 }
 
