@@ -7,6 +7,7 @@ inputTextField.placeholder = "Digite seu texto";
 export let phrase = "";
 
 const form = document.forms.namedItem("encrypt-decrypt");
+
 form.addEventListener("input", () => {
     const message = form.message.value;
 
