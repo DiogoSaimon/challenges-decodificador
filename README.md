@@ -1,29 +1,45 @@
-# Challenger Decodificador
+<div align='center'> 
+  <h1>Challenge Codificador</h1>
+  <img src='https://github.com/DiogoSaimon/challenges-decodificador/assets/86212446/9cdfe13f-95ee-4564-8b6f-728afb803009' alt='badge challenge codificador ONE'>
+</div>
 
-![Template Decodificador](https://github.com/DiogoSaimon/challenges-decodificador/assets/86212446/5aaa7649-b778-4df9-a749-723819426f25)
+https://github.com/DiogoSaimon/challenges-decodificador/assets/86212446/e12a4fdf-e2d0-48e8-b69b-f2ad5b1ae8a9
 
 
 # Resumo do projeto
-Projeto em andamento, sendo realizado por integrantes do time Scuba da Alura, visando a prática com a linguagem Java e os conceitos do paradigma de orientação a objetos.
+Projeto finaliazado. O Desafio era criar um projeto para codificar e descodificar o texto do usuário, além de poder copiar o resultado.
 
-## 🔨 Funcionalidades do projeto
 
-- `Funcionalidade 1` `Cadastro de Autores`: Nosso sistema precisa estar apto a cadastrar os autores associados ao livros publicados por eles. Para cadastrar um autor, devem ser informados seu e-mail, válido e único dentro do sistema. Seu nome e uma pequena biografia. Todos os campos são obrigatórios. O sistema também deve gravar a data em que o autor foi cadastrado no sistema.
-- `Funcionalidade 2` `Cadastro de categorias`: O sistema precisa agrupar os livros em categorias como ficção, filosofia, história, infantil. Para o cadastro de uma categoria no sistema, é preciso informar obrigatoriamente seu nome. A data em que a categoria foi cadastrada no sistema precisa ser gravada.
-- `Funcionalidade 3` `Cadastro de livros`: Para cadastrar um livro na editora, precisamos informar seu título, isbn, resumo, sumário, número de páginas, autor, categoria e preço. O autor e categoria precisam estar previamente cadastrados no sistema. O isbn precisa estar no formato correto. O resumo não pode ter mais que 500 caracteres e o sumário é de tamanho livre. Todos os campos são obrigatórios.
-- `Funcionalidade 4` `Realizar venda`: Para realizar uma venda, o usuário do sistema deve ser capaz de buscar os livros pelo seu título, adicionar à venda e finalizar a venda. No processo de finalização da venda os títulos dos livros e seus preços devem ser exibidos juntamente com a data da venda que deve ficar armazenada. O preço do livro no momento da venda também precisa ser salvo.
-- `Funcionalidade 5` `Relatório de vendas`:Para saber o quanto a editora vem faturando, precisa-se de um relatório que liste as vendas realizadas, os livros associadas, seus preços de venda e datas. O sistema precisa permitir informar um período de inicio e fim para qual será realizado o relatório. 
+## Funcionalidades do projeto
 
-## ✔️ Técnicas e tecnologias utilizadas
+- `Criptografar`: O usuário poderá criptogragar seu texto ao clicar no botão Criptogragar e será mostrado o resultado. 
+- `Descriptografar`: O usuário poderá descriptogragar seu texto ao clicar no botão Descriptogragar e será mostrado o resultado.
+- `Copiar`: Junto com o resultado, o botão Copiar irá aparecer. Quando clicado, o usário poderá usar o texto para realizar a funcionalidade inversa, por exemplo e será notificado que o texto foi copiado. 
+- `Tema Noturno`: Caso o usuário queira mudar o tema, poderá realizar clicando no ícone de Lua (tema escuro) ou Sol (tema claro).
 
-- ``Java 8``
-- ``InteliJ IDEA``
-- ``Paradigma de orientação a objetos``
 
-## 📁 Acesso ao projeto
+## Técnicas e tecnologias utilizadas
+
+- ``HTML``: Estrutura básica do projeto, usando algunas TAG como `main`, `img`, `section`, `div`, `footer` entre outras.
+- ``CSS``: Usado para estilizar o projeto no geral, aprendendo como usar variáveis, classes auxiliares, keyframes, media-queries e importar fontes. Aprendido um pouco de como funciona import/ export de arquivos, facilitando manutenções futuras no projeto.
+- ``JavaScript``: Usado para implementar as funcionalidades de criptografar, descriptografar, copiar, troca de tema, ativação do modal notification e ativação da animação quando o projeto é carregado ou atualiado. Aprendido um pouco de como funciona import/ export de arquivos, facilitando manutenções futuras no projeto.
+- ``Responsividade``: Realizado responsividade do projeto para melhor usabilidade/ experiência em tablets e mobiles.
+- ``Notificação Customizada``: Criado um alert customizado de algumas ações no projeto e melhor feedback ao usuário.
+
+
+## Próximos Passos
+
+- Adicionar regra no projeto de identificar e se o texto está criptografado, impeça a açao de criptografar e sinalizar o usuário. A regra vale para textos não criptografados também.
+- Adicionar regra para impedir caracteres com acento no texto digitado.
+
+
+## Acesso ao projeto
+
 Você pode acessar o projeto online [aqui](https://diogosaimon.github.io/challenges-decodificador/).
 
+
 ## Autor
+
 [<img loading="lazy" src="https://avatars.githubusercontent.com/u/86212446?s=400v=4" width=115><br><sub>Diogo Saimon</sub>](https://github.com/DiogoSaimon)
 
 
